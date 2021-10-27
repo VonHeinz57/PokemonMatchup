@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{D2FE756E-8115-4C6B-AA25-26074DBF36D8}|Default">
+  <MonoDevelop.Ide.ItemProperties.PokemonMatchup PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PokemonMatchup/EnemyPokemon.cs">
+    <Files>
+      <File FileName="PokemonMatchup/EnemyPokemon.cs" Line="24" Column="57" />
+      <File FileName="PokemonMatchup/Program.cs" />
+      <File FileName="PokemonMatchup/pokemon.csv" Line="7" Column="1" NotebookId="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PokemonMatchup" expanded="True">
+            <Node name="PokemonMatchup" expanded="True">
+              <Node name="EnemyPokemon.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
