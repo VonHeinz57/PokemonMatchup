@@ -17,6 +17,17 @@ namespace PokemonMatchup
             this.Name = name;
             this.Type1 = type1;
             this.Type2 = type2;
-        }       
+        }
+
+        public Pokemon (string csvData)
+        {
+            string[] data = csvData.Split(',');
+
+            this.Number = Convert.ToInt32(data[0]);
+            this.Name = data[1];
+            this.Type1 = data[2];
+            this.Type2 = data[3];
+
+        }
     }
 }
