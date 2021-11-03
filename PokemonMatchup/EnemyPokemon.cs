@@ -145,16 +145,15 @@ namespace PokemonMatchup
 
             if (type1 == "steel")
             {
-                superEffective.Add("fairy");
-                superEffective.Add("ice");
-                superEffective.Add("rock");
+                superEffective.Add("fighting");
+                superEffective.Add("fire");
+                superEffective.Add("ground");
             }
 
             if (type1 == "water")
             {
-                superEffective.Add("fire");
-                superEffective.Add("ground");
-                superEffective.Add("fighting");
+                superEffective.Add("electric");
+                superEffective.Add("grass");
             }
 
             if (type2 == "bug")
@@ -269,19 +268,23 @@ namespace PokemonMatchup
 
             if (type2 == "steel")
             {
-                superEffective.Add("fairy");
-                superEffective.Add("ice");
-                superEffective.Add("rock");
+                superEffective.Add("fighting");
+                superEffective.Add("fire");
+                superEffective.Add("ground");
             }
 
             if (type2 == "water")
             {
-                superEffective.Add("fire");
-                superEffective.Add("ground");
-                superEffective.Add("fighting");
+                superEffective.Add("electric");
+                superEffective.Add("grass");
+                superEffective.Add("grass");
             }
 
             List<string> distinctSupers = superEffective.Distinct().ToList();
+
+            List<string> nvEffective = GetNotVeryEffective(type1, type2);
+
+            distinctSupers.RemoveAll(item => nvEffective.Contains(item));
 
             return distinctSupers;
         }
