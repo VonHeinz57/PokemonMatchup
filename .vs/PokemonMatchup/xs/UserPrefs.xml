@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{D2FE756E-8115-4C6B-AA25-26074DBF36D8}|Default">
   <MonoDevelop.Ide.ItemProperties.PokemonMatchup PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PokemonMatchup/EnemyPokemon.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PokemonMatchup/Pokemon.cs">
     <Files>
       <File FileName="PokemonMatchup/Program.cs" Line="44" Column="21" />
-      <File FileName="PokemonMatchup/pokemon.csv" Line="131" Column="34" />
+      <File FileName="PokemonMatchup/pokemon.csv" />
       <File FileName="PokemonMatchup/Pokemon.cs" Line="1" Column="1" />
-      <File FileName="PokemonMatchup/EnemyPokemon.cs" Line="280" Column="42" />
+      <File FileName="PokemonMatchup/EnemyPokemon.cs" />
+      <File FileName="PokemonMatchup/Pokedex.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PokemonMatchup" expanded="True">
             <Node name="PokemonMatchup" expanded="True">
-              <Node name="EnemyPokemon.cs" selected="True" />
+              <Node name="Pokemon.cs" selected="True" />
             </Node>
           </Node>
         </State>
