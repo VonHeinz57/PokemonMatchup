@@ -9,6 +9,8 @@ namespace PokemonMatchup
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("----------");
+
             int i = 1;
             while (i > 0)
             {
@@ -37,10 +39,20 @@ namespace PokemonMatchup
 
                     List<string> supers = EnemyPokemon.GetSuperEffective(enemyType1, enemyType2);
 
+                    Console.WriteLine("----------");
+
                     if (enemyType1 != null && enemyType2 != "")
+                    {
                         Console.WriteLine($"Your enemy, {enemy}, is a {enemyType1}/{enemyType2} type");
+                        Console.WriteLine("----------");
+                    }
+
                     else if (enemyType1 != null && enemyType2 == "")
+                    {
                         Console.WriteLine($"Your enemy, {enemy}, is a {enemyType1} type");
+                        Console.WriteLine("----------");
+                    }
+
                     else
                         Console.WriteLine($"I can't find that pokemon in the pokedex");
 
@@ -50,6 +62,8 @@ namespace PokemonMatchup
                     {
                         Console.WriteLine(type);
                     }
+                    Console.WriteLine("----------");
+
                 }
 
                 else if (entry == 2)
@@ -60,6 +74,8 @@ namespace PokemonMatchup
                 else
                 {
                     Console.WriteLine("Not a valid entry.");
+                    Console.WriteLine("----------");
+
                 }
             }
         }

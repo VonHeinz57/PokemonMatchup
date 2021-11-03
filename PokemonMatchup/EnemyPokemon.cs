@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace PokemonMatchup
 {
@@ -280,7 +281,9 @@ namespace PokemonMatchup
                 superEffective.Add("fighting");
             }
 
-                return superEffective;
+            List<string> distinctSupers = superEffective.Distinct().ToList();
+
+            return distinctSupers;
         }
 
         public static List<string> GetNotVeryEffective(string type1, string type2)
@@ -525,7 +528,9 @@ namespace PokemonMatchup
                 notVeryEffective.Add("rock");
             }
 
-            return notVeryEffective;
+            List<string> distinctUnSupers = notVeryEffective.Distinct().ToList();
+
+            return distinctUnSupers;
 
         }
 
