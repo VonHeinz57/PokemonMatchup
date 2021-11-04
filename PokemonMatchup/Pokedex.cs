@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 
 namespace PokemonMatchup
 {
@@ -8,11 +10,14 @@ namespace PokemonMatchup
 
         public static Pokemon[] InitializePokedex()
         {
-            string[] csvLines = System.IO.File.ReadAllLines($"/users/loganheinz/projects/pokemonmatchup/pokemonmatchup/pokemon.csv");
+            var directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            string fileName = Path.Combine(directory, "pokemon.csv");
+
+            string[] csvLines = System.IO.File.ReadAllLines(fileName);
 
             var pokedex = new List<Pokemon>();
 
-            for (int i = 1; i <csvLines.Length; i++)
+            for (int i = 1; i < csvLines.Length; i++)
             {
                 Pokemon pokemon = new Pokemon(csvLines[i]);
                 pokedex.Add(pokemon);

@@ -13,3 +13,4 @@
 /Users/loganheinz/Projects/PokemonMatchup/PokemonMatchup/obj/Debug/net5.0/ref/PokemonMatchup.dll
 /Users/loganheinz/Projects/PokemonMatchup/PokemonMatchup/obj/Debug/net5.0/PokemonMatchup.pdb
 /Users/loganheinz/Projects/PokemonMatchup/PokemonMatchup/obj/Debug/net5.0/PokemonMatchup.genruntimeconfig.cache
+/Users/loganheinz/Projects/PokemonMatchup/PokemonMatchup/bin/Debug/net5.0/pokemon.csv
